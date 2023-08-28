@@ -13,7 +13,7 @@ const data = [
 function Section1() {
   return (
     <>
-    <div className=" w-full  text-white bg-black pt-[960px] pb-[60px] max-w-[1280px]  mx-auto">
+    <div className=" w-full  text-white bg-black pt-[60px] pb-[60px] max-w-[1280px]  mx-auto">
       <div className="px-[60px] max-w-[1280px] grid grid-cols-2">
         <div className="h-auto w-full flex justify-start items-start text-left">
           <p className=" font-Inter text-[34px] font-[300] leading-[1.4] ">

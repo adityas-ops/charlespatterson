@@ -1,5 +1,6 @@
 import React from "react";
 import TiltedVideo from "./TiltedVideo";
+import TiltedImage from "./TiltedImage";
 
 function Hero() {
   return (
@@ -17,8 +18,9 @@ function Hero() {
           Spotify, Nike, Samsung, Warner Music & Microsoft
         </p>
       </div>
-      <div className="s">
-      <TiltedVideo/>
+      <div className="">
+      <TiltedVideo part="video" src="images/gsZeGPMnnBEfnSqGVdYSoH7QWU~9oF3x4teSB_tY4o56BdpE8eAJ8GKQh8l76FfoD8YyMg.mp4"/>
+      {/* <TiltedImage/> */}
       </div>
     </div>
   );
