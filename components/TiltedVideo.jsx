@@ -9,7 +9,7 @@ const TiltedVideo = () => {
     const newRotation = 30 - scrollY / 20; // You can experiment with this factor
 
     // Ensure the rotation stays within a certain range
-    const clampedRotation = Math.min(Math.max(newRotation, 0), 30);
+    const clampedRotation = Math.max(newRotation, 0); // Prevent rotation below 0
 
     setRotation(clampedRotation);
   };
