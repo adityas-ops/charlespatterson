@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="bg-black text-white ">
    <Header/>
-   <div className=" pt-[120px]">
+   <div className=" pt-[130px]">
    <Hero/>
    <Section1/>
    <Section2/>

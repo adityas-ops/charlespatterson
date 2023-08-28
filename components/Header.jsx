@@ -5,7 +5,7 @@ function Header() {
     <>
       <div className=" w-full h-auto  fixed top-0   z-[50]" 
       style={{
-            backdropFilter: "blur(5px)",
+            backdropFilter: "blur(10px)",
             backgroundColor: "rgba(0, 0, 0, .1)",
           }}
       >
