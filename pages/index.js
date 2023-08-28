@@ -10,8 +10,9 @@ import Section5 from "@/components/Section5";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-black text-white ">
    <Header/>
+   <div className=" pt-[120px]">
    <Hero/>
    <Section1/>
    <Section2/>
@@ -19,6 +20,7 @@ export default function Home() {
    <Section4/>
    <Section5/>
    <Footer/>
-    </>
+   </div>
+    </div>
   )
 }

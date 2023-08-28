@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section1() {
   return (
-    <div>Section1</div>
+    <div className=' w-full h-screen text-white'>Section1</div>
   )
 }
 
