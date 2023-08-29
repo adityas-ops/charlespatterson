@@ -1,44 +1,67 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 function TiltedImage() {
-  const [rotationImg, setRotationImg] = useState(0);
+  const [rotationImg, setRotationImg] = useState(30);
+  const containerRef = useRef(null);
+  const [isInViewport, setIsInViewport] = useState(false);
 
   const handleScroll = () => {
-    const scrollY = window.scrollY;
-    // Adjust the rate of rotation change based on your preference
-    // const newRotation = 30 - scrollY / 20; // You can experiment with this factor
-    const newRotationImg = 40-scrollY/20
-
-    // Ensure the rotation stays within a certain range
-    // const clampedRotation = Math.max(newRotation, 0); 
-    //   const temp = Math.max(newRotationImg,0);
-    // Prevent rotation below 0
-
-    // setRotation(clampedRotation);
-    setRotationImg(newRotationImg)
+    let containerTop = containerRef.current.getBoundingClientRect().top;
+    // console.log("container -top ",containerTop);
+     
+    //  console.log(" new container -top ",containerTop);
+    const newRotationImg = 10 + containerTop / 10;
+    console.log("rotate deg",newRotationImg)
+    const clampedRotation = Math.max(newRotationImg, 0);
+    setRotationImg(clampedRotation);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    const containerElement = containerRef.current;
+
+    const handleIntersection = (entries) => {
+      const entry = entries[0];
+      setIsInViewport(entry.isIntersecting);
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+
+    if (containerElement) {
+      observer.observe(containerElement);
+    }
+
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      if (containerElement) {
+        observer.unobserve(containerElement);
+      }
     };
   }, []);
 
+  useEffect(() => {
+    if (isInViewport) {
+      window.addEventListener('scroll', handleScroll);
+      // Trigger initial scroll effect
+      handleScroll();
+    } else {
+      window.removeEventListener('scroll', handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [isInViewport]);
 
   return (
-    <>
-      <div className="flex justify-center gap-[10px] overflow-visible tilted-container">
-        <img
-          alt="as"
-          src="/images/D65cQSHhRwmV9vFgGHXdq7nQ8t4.jpeg"
-          className="rounded-[40px] transform tilted-video w-full h-full"
-          style={{
-            transform: `rotateX(${rotationImg}deg)` ,
-          }}
-        />
-      </div>
-    </>
+    <div ref={containerRef} className="flex justify-center gap-[10px] overflow-visible tilted-container-image">
+      <img
+        alt="as"
+        src="/images/D65cQSHhRwmV9vFgGHXdq7nQ8t4.jpeg"
+        className="rounded-[40px]  transform tilted-video w-full h-full"
+        style={{
+          transform: `rotateX(${rotationImg}deg)`,
+        }}
+      />
+    </div>
   );
 }
 
