@@ -7,7 +7,7 @@ function Marque({item,direction}) {
         <div className='w-full h-full'>
         <Marquee
             direction={direction}
-            speed={55}
+            speed={75}
             gradient={false}
             autoFill={true}
             className="flex min-w-0 flex-[0_0_100%]  items-center gap-8 flex-nowrap"

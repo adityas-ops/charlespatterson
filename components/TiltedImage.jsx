@@ -52,11 +52,11 @@ function TiltedImage() {
   }, [isInViewport]);
 
   return (
-    <div ref={containerRef} className="flex justify-center gap-[10px] overflow-visible tilted-container-image">
+    <div ref={containerRef} className="flex  justify-center gap-[10px] overflow-hidden tilted-container-image">
       <img
         alt="as"
         src="/images/D65cQSHhRwmV9vFgGHXdq7nQ8t4.jpeg"
-        className="rounded-[40px]  transform tilted-video w-full h-full"
+        className="rounded-[40px]  transform tilted-video "
         style={{
           transform: `rotateX(${rotationImg}deg)`,
         }}
