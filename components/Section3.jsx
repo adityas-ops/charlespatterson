@@ -16,7 +16,7 @@ function Section3() {
         <Marque item={data} direction="right"/>
       </div>
       <div className='  pt-[200px] max-w-[1280px]  mx-auto px-[60px] pb-[180px]'>
-      <p className=" text-[3rem] font-[300] font-Inter leading-[1.5] tracking-[-1.8px]">
+      <p className=" text-[44px] font-[300] font-Inter leading-[1.5] tracking-[-1.8px]">
       Quality is never an accident. It&apos;s something you have to work hard for. 
           <span className="text-[#9d78ed]">
           I believe that attention to detail is crucial for achieving excellence, and I fiercely advocate it.
