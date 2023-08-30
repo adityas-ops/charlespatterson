@@ -24,7 +24,7 @@ const TiltedVideo = ({src,part}) => {
 
   const ro= 40
   return (
-    <div className=" flex justify-center gap-[10px] overflow-visible tilted-container">
+    <div className="  flex justify-center gap-[10px] overflow-visible tilted-container">
      {
       part === "video" ? <>
       <video
