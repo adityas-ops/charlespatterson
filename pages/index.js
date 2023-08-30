@@ -11,16 +11,16 @@ export default function Home() {
   return (
     <div className="bg-black text-white ">
       <Header />
-      <div className=" pt-[130px]">
+      <div className=" pt-0 sm:pt-[130px]">
         <Hero />
         <Section1 />
         <Section2 />
-        <Section3 />
+        <Section3  />
         <Section4 />
         <Section5 />
         <Footer />
       </div>
-      <div className="fixed z-[1000] right-[50px] bottom-[50px] w-[100px] h-[100px] bg-[#cccccc] rounded-[50%] p-[10px]">
+      <div className="fixed sm:block hidden z-[1000] right-[50px] bottom-[50px] w-[100px] h-[100px] bg-[#cccccc] rounded-[50%] p-[10px]">
         <div className=" overflow-hidden spine ">
           <svg
             className="transform-origin-center-center"

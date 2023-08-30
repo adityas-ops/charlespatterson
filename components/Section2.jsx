@@ -3,8 +3,8 @@ import React from "react";
 function Section2() {
   return (
     <>
-      <div className=" max-w-[1200px]  mx-auto flex flex-col gap-[60px] justify-center pt-[120px] pb-[180px] px-[60px]">
-        <p className=" text-[3rem] font-[300] font-Inter leading-[1.5] tracking-[-1.8px]">
+      <div className=" hidden sm:flex max-w-[1200px]  mx-auto  flex-col gap-[60px] justify-center sm:pt-[120px] sm:pb-[180px] pb-[32px] px-[32px] pt-[32px] sm:px-[60px]">
+        <p className="   text-[3rem] font-[300] font-Inter leading-[1.5] tracking-[-1.8px]">
           I am committed to ensuring that every aspect of my work, from the
           initial research and planning stages to the final touches, is of the
           highest quality.
@@ -15,8 +15,8 @@ function Section2() {
           </span>
         </p>
       </div>
-      <div className=" w-full h-auto max-w-[1200px] mx-auto">
-        <div className=" px-[60px] pb-[60px] relative ">
+      <div className="  w-full h-auto max-w-[1200px] mx-auto">
+        <div className="hidden sm:block px-[32px] sm:px-[60px] pb-[32px] sm:pb-[60px] relative ">
           <div className="h-[800px] w-full">
             <img
               src="/images/MFhtNNVmvBF6tcaE2nlUOUNIpSg.jpg"
@@ -25,17 +25,17 @@ function Section2() {
             />
           </div>
         </div>
-        <div className="pt-[60px] px-[60px]">
-          <div className="w-full grid grid-cols-2">
+        <div className="sm:pt-[60px] pt-[32px] pb-[32px] sm:pb-0 px-[32px] sm:px-[60px]">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2">
             <div className="h-auto w-full flex justify-start items-start text-left">
-              <p className=" font-Inter text-[34px] font-[300] leading-[1.4] ">
+              <p className=" font-Inter text-[38px] sm:text-[34px] font-[300] leading-[1.4] ">
                 Logic + Rhythm
                 <br />
                 2020 / 2022
               </p>
             </div>
             <div className="h-auto w-full flex justify-start items-start text-left">
-              <p className=" text-[24px] font-[300] font-Inter leading-[2em] w-[98%] ">
+              <p className=" sm:text-[24px] text-[12px] font-[300] font-Inter leading-[2em] w-[98%] ">
                 I have had the pleasure of working with a highly skilled and
                 talented team of designers and engineers on a wide range of
                 products and web3 projects. Together, we were able to take many

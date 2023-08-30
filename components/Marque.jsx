@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 function Marque({item,direction}) {
   return (
     <>
-        <div className='w-full h-full'>
+        <div className=' hidden sm:block w-full h-full'>
         <Marquee
             direction={direction}
             speed={75}

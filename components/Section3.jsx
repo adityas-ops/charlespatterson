@@ -11,11 +11,11 @@ const data = [
 
 function Section3() {
   return (
-    <>
-      <div className=' h-[512px] pt-[160px] flex items-center justify-center '>
+    <div className="hidden sm:block">
+      <div className=' flex h-[512px] pt-[160px]  items-center justify-center '>
         <Marque item={data} direction="right"/>
       </div>
-      <div className=' pt-[200px] max-w-[1280px]  mx-auto px-[60px] pb-[180px]'>
+      <div className='  pt-[200px] max-w-[1280px]  mx-auto px-[60px] pb-[180px]'>
       <p className=" text-[3rem] font-[300] font-Inter leading-[1.5] tracking-[-1.8px]">
       Quality is never an accident. It&apos;s something you have to work hard for. 
           <span className="text-[#9d78ed]">
@@ -23,7 +23,7 @@ function Section3() {
           </span>
         </p>
       </div>
-    </>
+    </div>
   )
 }
 
