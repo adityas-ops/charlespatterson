@@ -16,7 +16,7 @@ function Section5() {
         <Marque item={data} direction="left" />
       </div>
       <div className=" max-w-[1200px] px-[30px] contrast-75 sm:px-[60px] pb-[60px] mx-auto">
-        <p className=" text-[23px] sm:text-[2.75rem] font-[300] px-0 sm:px-[60px]  pb-[60px] font-Inter leading-[1.5] sm:w-full w-[95%] tracking-normal sm:tracking-[-1.8px]">
+        <p className=" text-[23px] sm:text-[2.75rem] font-[300] px-0   pb-[60px] font-Inter leading-[1.5] sm:w-full w-[95%] tracking-normal sm:tracking-[-1.8px]">
           My door is always open to new opportunities, so come say hello and
           have a chat about working together ↓
         </p>
