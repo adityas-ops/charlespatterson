@@ -9,7 +9,7 @@ import Section5 from "@/components/Section5";
 
 export default function Home() {
   return (
-    <div className="bg-black text-white ">
+    <div className="bg-white text-black ">
       <Header />
       <div className=" pt-0 sm:pt-[130px]">
         <Hero />

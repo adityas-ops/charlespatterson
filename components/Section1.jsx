@@ -13,7 +13,7 @@ const data = [
 function Section1() {
   return (
     <>
-    <div className=" w-full  text-white bg-black py-[32px] sm:py-[60px] max-w-[1280px]  mx-auto">
+    <div className=" w-full  text-black bg-white py-[32px] sm:py-[60px] max-w-[1280px]  mx-auto">
       <div className="sm:px-[60px] px-[32px]  max-w-[1280px] grid grid-cols-1 sm:grid-cols-2">
         <div className="h-auto w-full  flex justify-start items-start text-left">
           <p className=" hidden sm:block font-Inter text-[34px] font-[300] leading-[1.4] ">
