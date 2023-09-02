@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const TiltedVideo = ({src,part}) => {
+const TiltedVideo = () => {
   const [rotation, setRotation] = useState(30); // Initial rotation angle
  
 
@@ -22,13 +22,11 @@ const TiltedVideo = ({src,part}) => {
     };
   }, []);
 
-  const ro= 40
   return (
     <div className="  flex justify-center gap-[10px] overflow-visible tilted-container">
-     {
-      part === "video" ? <>
+    
       <video
-        src={src}
+        src="images/gsZeGPMnnBEfnSqGVdYSoH7QWU~9oF3x4teSB_tY4o56BdpE8eAJ8GKQh8l76FfoD8YyMg.mp4"
         className="rounded-[40px] transform tilted-video w-full h-full"
         loop
         autoPlay
@@ -41,16 +39,8 @@ const TiltedVideo = ({src,part}) => {
           msTransform: `rotateX(${rotation}deg)`,
           OTransform: `rotateX(${rotation}deg)`,
         }}
+      
       />
-      </>:
-      <>
-        <img alt="as"   src={src} 
-        className='rounded-[40px] transform tilted-video w-full h-full'
-         style={{
-          transform: `rotateX(${ro}deg)`,
-        }}/>
-      </>
-     }
     </div>
   );
 };
