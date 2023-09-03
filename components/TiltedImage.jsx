@@ -7,9 +7,6 @@ function TiltedImage() {
 
   const handleScroll = () => {
     let containerTop = containerRef.current.getBoundingClientRect().top;
-    // console.log("container -top ",containerTop);
-     
-    //  console.log(" new container -top ",containerTop);
     const newRotationImg = 10 + containerTop / 10;
     console.log("rotate deg",newRotationImg)
     const clampedRotation = Math.max(newRotationImg, 0);
@@ -40,7 +37,6 @@ function TiltedImage() {
   useEffect(() => {
     if (isInViewport) {
       window.addEventListener('scroll', handleScroll);
-      // Trigger initial scroll effect
       handleScroll();
     } else {
       window.removeEventListener('scroll', handleScroll);

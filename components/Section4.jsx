@@ -1,5 +1,4 @@
 import React from 'react'
-import TiltedVideo from './TiltedVideo'
 import TiltedImage from './TiltedImage'
 
 function Section4() {

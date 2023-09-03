@@ -28,7 +28,6 @@ function Hero() {
      <div className="relative h-full sm:h-[900px]">
      <div className=" hidden sm:block absolute top-[-12%]">
       <TiltedVideo/>
-      {/* <TiltedImage/> */}
       </div>
      </div>
       <div className=" sm:hidden w-full h-[280px]">
